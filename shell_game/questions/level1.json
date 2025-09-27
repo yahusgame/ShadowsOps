@@ -4,39 +4,54 @@
         "correct": ["ls", "ls -a", "ls -l"],
         "success_msg": "Etrafı aydınlattın, yerde bir anahtar dosyası var: key.txt",
         "fail_msg": "❌ Komut geçersiz. Karanlıkta duvara tosladın ⚡",
-        "hint": "💡 ls: Bulunduğun dizindeki dosya ve klasörleri listeler. Örn: ls -a",
-        "learn": "📘 ls komutu bulunduğun dizindeki içerikleri listeler. Örn: ls, ls -a, ls -l"
+        "hint": "ls: Bulunduğun dizindeki dosya ve klasörleri listeler. Örn: ls -a",
+        "learn": "ls komutu bulunduğun dizindeki içerikleri listeler. Örn: ls, ls -a, ls -l",
+        "narration_pre": "Mentor: \"Karanlıktaysan, önce etrafına bakmayı öğren.\"",
+        "narration_post": "Mentor: \"İşte ilk ışık, yolun başlangıcı.\"",
+        "speaker": "mentor"
     },
     {
         "prompt": "Kapıya ulaştın. İçeri girmek için ne yaparsın?",
         "correct": "regex:^cd door/?$",
         "success_msg": "Kapıdan geçtin, yeni odaya girdin.",
         "fail_msg": "❌ Permission denied! Kapı açılmadı 🔒",
-        "hint": "💡 cd: Bir dizine geçmek için kullanılır. Örn: cd door/",
-        "learn": "📘 cd komutu dizinler arasında gezinmeni sağlar. Örn: cd /home, cd .."
+        "hint": "cd: Bir dizine geçmek için kullanılır. Örn: cd door/",
+        "learn": "cd komutu dizinler arasında gezinmeni sağlar. Örn: cd /home, cd ..",
+        "narration_pre": "Mentor: \"Kapılar dizinler gibidir, yanlış yol seni kapatır.\"",
+        "narration_post": "Mentor: \"Yolculuğun derinlere doğru devam ediyor.\"",
+        "speaker": "mentor"
     },
     {
         "prompt": "Yeni odada yolunu kaybettin. Nerede olduğunu nasıl öğrenirsin?",
         "correct": "regex:^pwd$",
         "success_msg": "📍 Şu anda /pipeline/room1 konumundasın.",
         "fail_msg": "❌ Yanlış komut. Hâlâ kayıpsın 🌫️",
-        "hint": "💡 pwd: 'print working directory' → bulunduğun klasörün tam yolunu verir.",
-        "learn": "📘 pwd komutu bulunduğun dizinin tam yolunu yazdırır."
+        "hint": "pwd: 'print working directory' → bulunduğun klasörün tam yolunu verir.",
+        "learn": "pwd bulunduğun dizinin tam yolunu yazdırır.",
+        "narration_pre": "Mentor: \"Yolunu kaybettiğinde, önce nerede olduğunu bil.\"",
+        "narration_post": "Mentor: \"Konumunu bilmek, düzenin ilk adımıdır.\"",
+        "speaker": "mentor"
     },
     {
         "prompt": "‘Permission Guardian’ önünde. Anahtarı çalıştırılabilir hale getirmen gerek.",
         "correct": ["chmod +x key.txt", "chmod 755 key.txt"],
         "success_msg": "🔓 Kapı açıldı, Guardian yenildi! 🎉",
         "fail_msg": "❌ Permission denied! Guardian seni geri itti 🛑",
-        "hint": "💡 chmod +x dosya: Dosyayı çalıştırılabilir yapar.",
-        "learn": "📘 chmod komutu ile dosya izinlerini değiştirirsin; +x yürütme izni ekler. Örn: chmod +x script.sh"
+        "hint": "chmod +x dosya: Dosyayı çalıştırılabilir yapar.",
+        "learn": "chmod ile dosya izinlerini değiştirirsin; +x yürütme izni ekler. Örn: chmod +x script.sh",
+        "narration_pre": "Mentor: \"İzin olmadan hiçbir dosya harekete geçmez.\"",
+        "narration_post": "Mentor: \"Doğru izin, seni engellerden kurtarır.\"",
+        "speaker": "mentor"
     },
     {
         "prompt": "Anahtarı çalıştırılabilir hale getirdin. Şimdi dosyayı çalıştırmayı dene.",
         "correct": "./key.txt",
         "success_msg": "[Key Protocol Initiated...]\n>>> Dosya çözülüyor...\n>>> Gizli bir mekanizma tetiklendi!\n\nKaranlık odada bir ışık hüzmesi beliriyor.\nGölgeden derin bir ses yankılanıyor...\n\n\"Ben, Pipeline Guardian.\nBu odanın sırlarını çözdün, ama yolun daha yeni başlıyor.\nKod tek başına güçsüzdür;\nzamanın akışında satırlar kaybolur,\nve kaybolan kod sonsuza dek unutulur.\n\nOnu koruman, izini sürmen gerekir.\nVersiyonların zinciri, seni gölgelerden kurtaracak.\"\n\n>>> Kapıdan uğultular yükseliyor...\n>>> 'Git Dünyası'na giden geçit açıldı! 🔑",
         "fail_msg": "❌ Dosya çalıştırılamadı. Belki de chmod yapmayı unuttun?",
-        "hint": "💡 Bir dosyayı çalıştırmak için ./dosyaadı şeklinde kullanabilirsin.",
-        "learn": "📘 Linux'ta çalıştırılabilir dosyaları ./ ile çalıştırırsın. Örn: ./script.sh"
+        "hint": "Bir dosyayı çalıştırmak için ./dosyaadı şeklinde kullanabilirsin.",
+        "learn": "Linux'ta çalıştırılabilir dosyaları ./ ile çalıştırırsın. Örn: ./script.sh",
+        "narration_pre": "Mentor: \"Son adım seni sırların ötesine taşıyacak.\"",
+        "narration_post": "Mentor: \"Geçit açıldı. Git Dünyası seni bekliyor.\"",
+        "speaker": "mentor"
     }
 ]
