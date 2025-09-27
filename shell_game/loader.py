@@ -2,6 +2,21 @@ import json
 from question import Question
 
 def load_questions(path: str):
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return[Question(**q) for q in data]
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print(f"[HATA] {path} bulunamadı.")
+        return []
+    except json.JSONDecodeError as e:
+        print(f"[HATA] {path} dosyasında JSON hatası: {e}")
+        return []
+
+    questions = []
+    for q in data:
+        try:
+            questions.append(Question(**q))
+        except TypeError as e:
+            print(f"[HATA] Geçersiz soru formatı: {q} ({e})")
+    print(f"[OK] {path} dosyasından {len(questions)} soru yüklendi.")
+    return questions
