@@ -1,0 +1,18 @@
+[
+    {
+        "prompt": "Önünde karanlık bir oda var. Etrafı nasıl  görürsün?",
+        "correct": "ls",
+        "success_msg": "Etrafı aydınlattın, yerde bir anahtar dosyası var: key.txt",
+        "fail_msg": "Komut geçersiz.Karanlıkta tökezledin.",
+        "hint":"ls: Bulunduğun dizindeki dosya ve klasörleri listeler",
+        "learn": "ls komutu bulunduğun dizindeki içerikleri listeler"
+    },
+    {
+        "prompt": "Kapıya ulaştın. İçeri girmek için ne yaparsın?",
+        "correct":"cd door/",
+        "success_msg": "Kapıdan geçtin yeni odaya girdin.",
+        "fail_msg": "Permission denided! Kapı açılmadı",
+        "hint": "cd: Bir dizine geçmek için kullanılır. Örnek: cd door/",
+        "learn":"cd komutu, dizinler arasında gezinmeni sağlar."
+    }
+]

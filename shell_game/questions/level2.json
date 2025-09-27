@@ -1,0 +1,42 @@
+[
+  {
+    "prompt": "Yeni bir projeye başladın. İlk adımda Git deposu oluşturmak için hangi komutu yazarsın?",
+    "correct": "git init",
+    "success_msg": "✅ Git deposu başarıyla oluşturuldu!",
+    "fail_msg": "❌ Bu komutla depo oluşmadı.",
+    "hint": "git init: Bulunduğun klasörü yeni bir Git deposuna dönüştürür.",
+    "learn": "git init ile bulunduğun dizinde yeni bir Git deposu başlatırsın."
+  },
+  {
+    "prompt": "Dosyalarını commit için hazırlamak istiyorsun. Hangi komutla ekleme yaparsın?",
+    "correct": "git add .",
+    "success_msg": "✅ Dosyalar commit için hazırlandı.",
+    "fail_msg": "❌ Dosyalar eklenmedi.",
+    "hint": "git add . → Bulunduğun dizindeki tüm değişiklikleri ekler.",
+    "learn": "git add ile dosyaları commit için staging alanına eklersin."
+  },
+  {
+    "prompt": "İlk commit’ini atmak için hangi komutu yazarsın?",
+    "correct": "git commit -m \"first commit\"",
+    "success_msg": "✅ İlk commit başarıyla oluşturuldu!",
+    "fail_msg": "❌ Commit başarısız oldu.",
+    "hint": "git commit -m \"mesaj\" → Değişiklikleri commit eder.",
+    "learn": "git commit ile değişikliklerini kalıcı hale getirirsin."
+  },
+  {
+    "prompt": "Uzak depoya kodlarını göndermek için hangi komutu yazarsın?",
+    "correct": "git push",
+    "success_msg": "✅ Kodlar uzak depoya gönderildi!",
+    "fail_msg": "❌ Push başarısız oldu.",
+    "hint": "git push → Yerel commit’lerini uzak depoya gönderir.",
+    "learn": "git push ile commit’lerini uzak depoya aktarırsın."
+  },
+  {
+    "prompt": "Merge sırasında çatışma çıktı! Çözüm için hangi komutla hangi branch’te olduğunu kontrol edersin?",
+    "correct": "git status",
+    "success_msg": "✅ Branch durumunu gördün, çatışmayı çözmeye hazırsın.",
+    "fail_msg": "❌ Yanlış komut, çatışmayı göremedin.",
+    "hint": "git status → Çalışma alanının ve branch’in durumunu gösterir.",
+    "learn": "git status ile hangi branch’te olduğunu ve dosya durumlarını görebilirsin."
+  }
+]
