@@ -1,6 +1,4 @@
 from colorama import Fore, Style, init
-
-# Renk ayarları
 init(autoreset=True, convert=True)
 
 def success(msg: str) -> str:
