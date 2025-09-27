@@ -27,7 +27,9 @@ class Question:
         return ans == self.correct.lower()
 
     def show_hint(self) -> Optional[str]:
+        """İpucu varsa formatlı string döndürür."""
         return f"💡 İpucu: {self.hint}" if self.hint else None
 
     def show_learn(self) -> Optional[str]:
+        """Öğrenme çıktısı varsa formatlı string döndürür."""
         return f"📘 Öğrendin: {self.learn}" if self.learn else None
