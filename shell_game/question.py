@@ -28,6 +28,3 @@ class Question:
 
     def show_hint(self) -> Optional[str]:
         return f"💡 İpucu: {self.hint}" if self.hint else None
-
-    def show_learn(self) -> Optional[str]:
-        return f"📘 Öğrendin: {self.learn}" if self.learn else None

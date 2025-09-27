@@ -9,7 +9,7 @@ def load_questions(path: str):
         print(f"[HATA] {path} bulunamadı.")
         return []
     except json.JSONDecodeError as e:
-        print(f"[HATA] {path} dosyasında JSON hatası: {e}")
+        print(f"[HATA] {path} JSON hatalı: {e}")
         return []
 
     questions = []
@@ -17,6 +17,6 @@ def load_questions(path: str):
         try:
             questions.append(Question(**q))
         except TypeError as e:
-            print(f"[HATA] Geçersiz soru formatı: {q} ({e})")
+            print(f"[HATA] Geçersiz soru: {q} ({e})")
     print(f"[OK] {path} dosyasından {len(questions)} soru yüklendi.")
     return questions

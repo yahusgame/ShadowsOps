@@ -20,6 +20,9 @@ class GameState:
     def reset(self):
         self.__init__()
 
+    def status_bar(self) -> str:
+        return f"❤️ Can: {self.lives} | ⭐ Puan: {self.score} | 💡 İpucu: {self.used_hints}\n"
+
     def summary(self) -> str:
         lines = [
             f"✅ Doğru: {self.correct_answers}",

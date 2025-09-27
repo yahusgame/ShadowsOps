@@ -11,19 +11,20 @@ class Game:
         if not text:
             return
         if speaker == "hacker":
-            print(colors.error(f"🕶️ {text}"))
+            print(colors.hacker(f"🕶️ {text}"))
         else:
-            print(colors.info(f"🧭 {text}"))
+            print(colors.mentor(f"🧭 {text}"))
 
     def ask(self, q):
         self._narrate(q.narration_pre, q.speaker)
 
-        answer = input("Komutunu yaz (İpucu için 'h'): ").strip()
+        print(colors.prompt(q.prompt))
+        answer = input("👉 Komutunu yaz (İpucu için 'h'): ").strip()
 
         if answer.lower() == "h" and q.hint:
             self.state.used_hints += 1
             self.state.add_score(-3)
-            print(colors.warning(q.show_hint()))
+            print(colors.hint(q.show_hint()))
             return self.ask(q)
 
         correct = q.check_answer(answer)
@@ -31,15 +32,14 @@ class Game:
         if correct:
             self.state.add_score(10)
             self.state.correct_answers += 1
-            print(colors.success(f"{q.success_msg}"))
-            if q.learn:
-                self.state.learned.append(q.learn)
-                print(colors.info(q.show_learn()))
+            print(colors.success(q.success_msg))
             self._narrate(q.narration_post, q.speaker)
         else:
             self.state.lose_life()
             self.state.wrong_answers += 1
-            print(colors.error(f"{q.fail_msg} (-1 can)"))
+            print(colors.error(f"{q.fail_msg}  ❤️ -1 Can"))
+
+        print(self.state.status_bar())  # can, puan, ipucu göster
 
     def run(self):
         print(colors.info(">> Shell Game Başladı!"))
