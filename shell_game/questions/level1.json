@@ -1,18 +1,34 @@
 [
     {
         "prompt": "Önünde karanlık bir oda var. Etrafı nasıl görürsün?",
-        "correct": ["ls", "ls -a"],
+        "correct": ["ls", "ls -a", "ls -l"],
         "success_msg": "Etrafı aydınlattın, yerde bir anahtar dosyası var: key.txt",
-        "fail_msg": "Komut geçersiz. Karanlıkta tökezledin.",
-        "hint": "ls: Bulunduğun dizindeki dosya ve klasörleri listeler.",
-        "learn": "ls komutu bulunduğun dizindeki içerikleri listeler."
+        "fail_msg": "❌ Komut geçersiz. Karanlıkta duvara tosladın ⚡",
+        "hint": "💡 ls: Bulunduğun dizindeki dosya ve klasörleri listeler. Örn: ls -a",
+        "learn": "📘 ls komutu bulunduğun dizindeki içerikleri listeler. Örn: ls, ls -a, ls -l"
     },
     {
         "prompt": "Kapıya ulaştın. İçeri girmek için ne yaparsın?",
         "correct": "regex:^cd door/?$",
         "success_msg": "Kapıdan geçtin, yeni odaya girdin.",
-        "fail_msg": "Permission denied! Kapı açılmadı.",
-        "hint": "cd: Bir dizine geçmek için kullanılır. Örnek: cd door/",
-        "learn": "cd komutu, dizinler arasında gezinmeni sağlar."
+        "fail_msg": "❌ Permission denied! Kapı açılmadı 🔒",
+        "hint": "💡 cd: Bir dizine geçmek için kullanılır. Örn: cd door/",
+        "learn": "📘 cd komutu dizinler arasında gezinmeni sağlar. Örn: cd /home, cd .."
+    },
+    {
+        "prompt": "Yeni odada yolunu kaybettin. Nerede olduğunu nasıl öğrenirsin?",
+        "correct": "regex:^pwd$",
+        "success_msg": "📍 Şu anda /pipeline/room1 konumundasın.",
+        "fail_msg": "❌ Yanlış komut. Hâlâ kayıpsın 🌫️",
+        "hint": "💡 pwd: 'print working directory' → bulunduğun klasörün tam yolunu verir.",
+        "learn": "📘 pwd komutu bulunduğun dizinin tam yolunu yazdırır."
+    },
+    {
+        "prompt": "‘Permission Guardian’ önünde. Anahtarı çalıştırılabilir hale getirmen gerek.",
+        "correct": ["chmod +x key.txt", "chmod 755 key.txt"],
+        "success_msg": "🔓 Kapı açıldı, Guardian yenildi! 🎉",
+        "fail_msg": "❌ Permission denied! Guardian seni geri itti 🛑",
+        "hint": "💡 chmod +x dosya: Dosyayı çalıştırılabilir yapar.",
+        "learn": "📘 chmod komutu ile dosya izinlerini değiştirirsin; +x yürütme izni ekler. Örn: chmod +x script.sh"
     }
 ]
