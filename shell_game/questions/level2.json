@@ -1,42 +1,68 @@
 [
   {
-    "prompt": "Yeni bir projeye başladın. İlk adımda Git deposu oluşturmak için hangi komutu yazarsın?",
+    "prompt": "Karanlık odada yankılanan ses: \"Artık kodun gölgelerde kaybolmamalı.\" İlk zincirini başlat. Depoyu oluştur.",
     "correct": "git init",
-    "success_msg": "✅ Git deposu başarıyla oluşturuldu!",
-    "fail_msg": "❌ Bu komutla depo oluşmadı.",
+    "success_msg": "🔗 Zincirler birleşti, Git deposu açıldı!",
+    "fail_msg": "❌ Komut yankılandı ama zincir oluşmadı.",
     "hint": "git init: Bulunduğun klasörü yeni bir Git deposuna dönüştürür.",
-    "learn": "git init ile bulunduğun dizinde yeni bir Git deposu başlatırsın."
+    "learn": "git init ile bulunduğun dizinde yeni bir Git deposu başlatırsın.",
+    "narration_pre": "Mentor: \"Kaybolan kod gölgelerde çürür; zincirini başlat.\"",
+    "narration_post": "Mentor: \"Artık bir kaydın var. Yolun korunmaya başladı.\"",
+    "speaker": "mentor"
   },
   {
-    "prompt": "Dosyalarını commit için hazırlamak istiyorsun. Hangi komutla ekleme yaparsın?",
-    "correct": "git add .",
-    "success_msg": "✅ Dosyalar commit için hazırlandı.",
-    "fail_msg": "❌ Dosyalar eklenmedi.",
+    "prompt": "Dosyaların etrafında parlıyor ama hâlâ zincire bağlı değiller. Onları kayda hazırla.",
+    "correct": ["git add .", "git add -A"],
+    "success_msg": "📂 Dosyalar staging alanına alındı. Zincir hazır.",
+    "fail_msg": "❌ Dosyalar gölgede kaldı, zincire katılamadı.",
     "hint": "git add . → Bulunduğun dizindeki tüm değişiklikleri ekler.",
-    "learn": "git add ile dosyaları commit için staging alanına eklersin."
+    "learn": "git add ile dosyaları commit için staging alanına eklersin.",
+    "narration_pre": "Mentor: \"Her şey sıraya konmalı, yoksa unutulur.\"",
+    "narration_post": "Mentor: \"Hazırlık tamam. Şimdi kayda geçebilirsin.\"",
+    "speaker": "mentor"
   },
   {
-    "prompt": "İlk commit’ini atmak için hangi komutu yazarsın?",
-    "correct": "git commit -m \"first commit\"",
-    "success_msg": "✅ İlk commit başarıyla oluşturuldu!",
-    "fail_msg": "❌ Commit başarısız oldu.",
+    "prompt": "Sıradaki adım: İz bırakmak. İlk kez zincire bir işaret düşmelisin. Mesajın yankılansın.",
+    "correct": "regex:^git commit -m \".+\"$",
+    "success_msg": "📝 İlk iz bırakıldı. Commit başarıyla oluşturuldu!",
+    "fail_msg": "❌ İz kayboldu. Commit başarısız.",
     "hint": "git commit -m \"mesaj\" → Değişiklikleri commit eder.",
-    "learn": "git commit ile değişikliklerini kalıcı hale getirirsin."
+    "learn": "git commit ile değişikliklerini kalıcı hale getirirsin.",
+    "narration_pre": "Mentor: \"Mesajın yoksa, adımın da yoktur.\"",
+    "narration_post": "Mentor: \"İlk izini bıraktın. Yolculuğun resmen başladı.\"",
+    "speaker": "mentor"
   },
   {
-    "prompt": "Uzak depoya kodlarını göndermek için hangi komutu yazarsın?",
-    "correct": "git push",
-    "success_msg": "✅ Kodlar uzak depoya gönderildi!",
-    "fail_msg": "❌ Push başarısız oldu.",
+    "prompt": "Yereldeki zincir tamamlandı. Ama kod hâlâ bu odada. Onu uzaklara taşı ki kaybolmasın.",
+    "correct": ["git push", "git push origin main", "git push origin master"],
+    "success_msg": "🌌 Kodun gökyüzüne yükseldi, uzak depoda güvenle saklanıyor.",
+    "fail_msg": "❌ Kodun bu odadan çıkamadı.",
     "hint": "git push → Yerel commit’lerini uzak depoya gönderir.",
-    "learn": "git push ile commit’lerini uzak depoya aktarırsın."
+    "learn": "git push ile commit’lerini uzak depoya aktarırsın.",
+    "narration_pre": "Mentor: \"Yalnız zincir burada çürür. Onu uzaklara gönder.\"",
+    "narration_post": "Mentor: \"Artık kodun gölgelerin ötesinde yaşıyor.\"",
+    "speaker": "mentor"
   },
   {
-    "prompt": "Merge sırasında çatışma çıktı! Çözüm için hangi komutla hangi branch’te olduğunu kontrol edersin?",
+    "prompt": "Zincirler birleşirken bir çatışma çıktı! ⚔️ Yanlış bir hamle tüm düzeni yok edebilir. Önce bulunduğun konumu bil!",
     "correct": "git status",
-    "success_msg": "✅ Branch durumunu gördün, çatışmayı çözmeye hazırsın.",
-    "fail_msg": "❌ Yanlış komut, çatışmayı göremedin.",
+    "success_msg": "⚔️ Branch’in açığa çıktı, çatışmayı çözmeye hazırsın.",
+    "fail_msg": "❌ Yanlış komut! Çatışma seni yuttu, zincirin koptu.",
     "hint": "git status → Çalışma alanının ve branch’in durumunu gösterir.",
-    "learn": "git status ile hangi branch’te olduğunu ve dosya durumlarını görebilirsin."
+    "learn": "git status ile hangi branch’te olduğunu ve dosya durumlarını görebilirsin.",
+    "narration_pre": "Mentor: \"Dikkat et! Çatışma bir sınavdır; yanlış hamle zincirini parçalar.\"",
+    "narration_post": "Mentor: \"Durumunu gördün. Çatışmayı çözmeye hazır ol. Şimdi dikkatini kaybetme!\"",
+    "speaker": "mentor"
+  },
+  {
+    "prompt": "Çatışma çözüldü. Zincirler birleşti. Kapıdan bir ışık sızıyor...",
+    "correct": "continue",
+    "success_msg": "📜 \"Branch’ler gölgeler gibi çoğalır. Sıradaki odada otomasyonun zinciri seni bekliyor...\"\n🔓 CI/CD Dünyası'na giden geçit açıldı!",
+    "fail_msg": "❌ Yanlış cevap. Geçit karardı.",
+    "hint": "Bu özel görevde ipucu yok. Sezginle devam et.",
+    "learn": "Git’te çatışmaları çözmek DevOps’un en önemli becerilerindendir.",
+    "narration_pre": "Mentor: \"Çatışma bittiğinde yol yeniden açılır.\"",
+    "narration_post": "Mentor: \"Geçit açıldı. Sıradaki dünyaya hazır ol.\"",
+    "speaker": "mentor"
   }
 ]
