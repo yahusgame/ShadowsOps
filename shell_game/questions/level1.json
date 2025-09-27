@@ -32,11 +32,11 @@
         "learn": "📘 chmod komutu ile dosya izinlerini değiştirirsin; +x yürütme izni ekler. Örn: chmod +x script.sh"
     },
     {
-    "prompt": "Anahtarı çalıştırılabilir hale getirdin. Şimdi dosyayı çalıştırmayı dene.",
-    "correct": "./key.txt",
-    "success_msg": "[Key Protocol Initiated...]\n>>> Dosya çözülüyor...\n>>> İçinde saklı bir pipeline sırrı bulundu!\n\n\"Bu odanın sınırları, tek bir makinenin ötesine uzanır.\nKodun, gölgeler arasında kaybolmamak için izlenmeli.\nZaman yolunu siler, ama versiyonlar seni korur.\"\n\n>>> Kapıdan gelen bir uğultu duyuyorsun...\n>>> 'Git Dünyası'na giden geçit açıldı!",
-    "fail_msg": "❌ Dosya çalıştırılamadı. Belki de chmod yapmayı unuttun?",
-    "hint": "💡 Bir dosyayı çalıştırmak için ./dosyaadı şeklinde kullanabilirsin.",
-    "learn": "📘 Linux'ta çalıştırılabilir dosyaları ./ ile çalıştırırsın. Örn: ./script.sh"
+        "prompt": "Anahtarı çalıştırılabilir hale getirdin. Şimdi dosyayı çalıştırmayı dene.",
+        "correct": "./key.txt",
+        "success_msg": "[Key Protocol Initiated...]\n>>> Dosya çözülüyor...\n>>> İçinde saklı bir pipeline sırrı bulundu!\n\n\"Bu odanın sınırları, tek bir makinenin ötesine uzanır.\nKodun, gölgeler arasında kaybolmamak için izlenmeli.\nZaman yolunu siler, ama versiyonlar seni korur.\"\n\n>>> Kapıdan gelen bir uğultu duyuyorsun...\n>>> 'Git Dünyası'na giden geçit açıldı!",
+        "fail_msg": "❌ Dosya çalıştırılamadı. Belki de chmod yapmayı unuttun?",
+        "hint": "💡 Bir dosyayı çalıştırmak için ./dosyaadı şeklinde kullanabilirsin.",
+        "learn": "📘 Linux'ta çalıştırılabilir dosyaları ./ ile çalıştırırsın. Örn: ./script.sh"
     }
 ]
