@@ -1,0 +1,21 @@
+# Visual Studio geçici dosyalarý
+.vs/
+*.vscode/
+*.user
+*.suo
+*.dbmdl
+
+# Build output
+bin/
+obj/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ortam dosyalarý
+env/
+venv/
+.env
