@@ -1,21 +1,39 @@
-# Visual Studio ge�ici dosyalar�
+# Visual Studio geçici dosyaları
 .vs/
-*.vscode/
 *.user
 *.suo
-*.dbmdl
 
-# Build output
+# VSCode ayarları
+.vscode/
+
+# Build klasörleri (C#, Unity vb. ihtimaline karşı)
 bin/
 obj/
 
-# Python cache
+# Python cache dosyaları
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ortam dosyalar�
+# Sanal ortamlar
 env/
 venv/
-.env
+.venv/
+ENV/
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log dosyaları
+*.log
+
+# Test çıktıları
+*.out
+*.tmp
+
+# Geçici editör dosyaları
+*~
+*.swp
