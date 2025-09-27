@@ -34,7 +34,7 @@
     {
         "prompt": "Anahtarı çalıştırılabilir hale getirdin. Şimdi dosyayı çalıştırmayı dene.",
         "correct": "./key.txt",
-        "success_msg": "[Key Protocol Initiated...]\n>>> Dosya çözülüyor...\n>>> İçinde saklı bir pipeline sırrı bulundu!\n\n\"Bu odanın sınırları, tek bir makinenin ötesine uzanır.\nKodun, gölgeler arasında kaybolmamak için izlenmeli.\nZaman yolunu siler, ama versiyonlar seni korur.\"\n\n>>> Kapıdan gelen bir uğultu duyuyorsun...\n>>> 'Git Dünyası'na giden geçit açıldı!",
+        "success_msg": "[Key Protocol Initiated...]\n>>> Dosya çözülüyor...\n>>> Gizli bir mekanizma tetiklendi!\n\nKaranlık odada bir ışık hüzmesi beliriyor.\nGölgeden derin bir ses yankılanıyor...\n\n\"Ben, Pipeline Guardian.\nBu odanın sırlarını çözdün, ama yolun daha yeni başlıyor.\nKod tek başına güçsüzdür;\nzamanın akışında satırlar kaybolur,\nve kaybolan kod sonsuza dek unutulur.\n\nOnu koruman, izini sürmen gerekir.\nVersiyonların zinciri, seni gölgelerden kurtaracak.\"\n\n>>> Kapıdan uğultular yükseliyor...\n>>> 'Git Dünyası'na giden geçit açıldı! 🔑",
         "fail_msg": "❌ Dosya çalıştırılamadı. Belki de chmod yapmayı unuttun?",
         "hint": "💡 Bir dosyayı çalıştırmak için ./dosyaadı şeklinde kullanabilirsin.",
         "learn": "📘 Linux'ta çalıştırılabilir dosyaları ./ ile çalıştırırsın. Örn: ./script.sh"
